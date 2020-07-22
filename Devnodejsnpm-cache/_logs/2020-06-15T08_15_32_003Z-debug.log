@@ -1,0 +1,388 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.18.0
+4 verbose npm-session f448fa2f7d48f25d
+5 silly install runPreinstallTopLevelLifecycles
+6 silly preinstall APO
+7 info lifecycle @~preinstall: @
+8 silly install loadCurrentTree
+9 silly install readLocalPackageData
+10 timing stage:loadCurrentTree Completed in 14ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 1ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 2ms
+16 silly install loadAllDepsIntoIdealTree
+17 http fetch GET 200 https://registry.npmjs.org/axios 1282ms
+18 http fetch GET 200 https://registry.npmjs.org/popper.js 3127ms
+19 http fetch GET 200 https://registry.npmjs.org/sass 4306ms
+20 http fetch GET 200 https://registry.npmjs.org/axios/-/axios-0.19.2.tgz 6154ms
+21 silly pacote range manifest for axios@^0.19 fetched in 7465ms
+22 http fetch GET 200 https://registry.npmjs.org/popper.js/-/popper.js-1.16.1.tgz 9366ms
+23 silly pacote range manifest for popper.js@^1.12 fetched in 12510ms
+24 warn deprecated popper.js@1.16.1: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
+25 http fetch GET 200 https://registry.npmjs.org/vue-template-compiler 1310ms
+26 http fetch GET 200 https://registry.npmjs.org/vue-template-compiler/-/vue-template-compiler-2.6.11.tgz 3120ms
+27 silly pacote range manifest for vue-template-compiler@^2.6.10 fetched in 4456ms
+28 http fetch GET 200 https://registry.npmjs.org/lodash 17157ms
+29 http fetch GET 200 https://registry.npmjs.org/follow-redirects 1003ms
+30 http fetch GET 200 https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.5.10.tgz 252ms
+31 silly pacote version manifest for follow-redirects@1.5.10 fetched in 1276ms
+32 http fetch GET 200 https://registry.npmjs.org/he 344ms
+33 http fetch GET 200 https://registry.npmjs.org/he/-/he-1.2.0.tgz 916ms
+34 silly pacote range manifest for he@^1.1.0 fetched in 1280ms
+35 http fetch GET 200 https://registry.npmjs.org/de-indent 99ms
+36 http fetch GET 200 https://registry.npmjs.org/de-indent/-/de-indent-1.0.2.tgz 133ms
+37 silly pacote range manifest for de-indent@^1.0.2 fetched in 248ms
+38 http fetch GET 200 https://registry.npmjs.org/vue 12540ms
+39 http fetch GET 200 https://registry.npmjs.org/debug 1102ms
+40 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-3.1.0.tgz 530ms
+41 silly pacote version manifest for debug@=3.1.0 fetched in 1644ms
+42 http fetch GET 200 https://registry.npmjs.org/sass/-/sass-1.26.8.tgz 17242ms
+43 silly pacote range manifest for sass@^1.20.1 fetched in 21569ms
+44 http fetch GET 200 https://registry.npmjs.org/ms 205ms
+45 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 163ms
+46 silly pacote version manifest for ms@2.0.0 fetched in 383ms
+47 http fetch GET 200 https://registry.npmjs.org/chokidar 3350ms
+48 http fetch GET 200 https://registry.npmjs.org/chokidar/-/chokidar-3.4.0.tgz 642ms
+49 silly pacote range manifest for chokidar@>=2.0.0 <4.0.0 fetched in 4020ms
+50 http fetch GET 200 https://registry.npmjs.org/braces 591ms
+51 http fetch GET 200 https://registry.npmjs.org/braces/-/braces-3.0.2.tgz 375ms
+52 silly pacote range manifest for braces@~3.0.2 fetched in 985ms
+53 http fetch GET 200 https://registry.npmjs.org/glob-parent 255ms
+54 http fetch GET 200 https://registry.npmjs.org/anymatch 1639ms
+55 http fetch GET 200 https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.1.tgz 424ms
+56 silly pacote range manifest for glob-parent@~5.1.0 fetched in 694ms
+57 http fetch GET 200 https://registry.npmjs.org/is-binary-path 145ms
+58 http fetch GET 200 https://registry.npmjs.org/anymatch/-/anymatch-3.1.1.tgz 269ms
+59 silly pacote range manifest for anymatch@~3.1.1 fetched in 1925ms
+60 http fetch GET 200 https://registry.npmjs.org/is-glob 327ms
+61 http fetch GET 200 https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz 480ms
+62 silly pacote range manifest for is-binary-path@~2.1.0 fetched in 637ms
+63 http fetch GET 200 https://registry.npmjs.org/normalize-path 160ms
+64 http fetch GET 200 https://registry.npmjs.org/is-glob/-/is-glob-4.0.1.tgz 258ms
+65 silly pacote range manifest for is-glob@~4.0.1 fetched in 599ms
+66 http fetch GET 200 https://registry.npmjs.org/readdirp 1124ms
+67 http fetch GET 200 https://registry.npmjs.org/readdirp/-/readdirp-3.4.0.tgz 581ms
+68 silly pacote range manifest for readdirp@~3.4.0 fetched in 1722ms
+69 silly fetchPackageMetaData error for laravel-mix@^5.0.1 Response timeout while trying to fetch https://registry.npmjs.org/laravel-mix (over 30000ms)
+70 silly fetchPackageMetaData error for cross-env@^7.0 Response timeout while trying to fetch https://registry.npmjs.org/cross-env (over 30000ms)
+71 silly pacote range manifest for is-glob@^4.0.1 fetched in 36ms
+72 http fetch GET 200 https://registry.npmjs.org/laravel-mix 31004ms
+73 silly fetchPackageMetaData error for jquery@^3.2 Response timeout while trying to fetch https://registry.npmjs.org/jquery (over 30000ms)
+74 http fetch GET 200 https://registry.npmjs.org/vue/-/vue-2.6.11.tgz 11304ms
+75 silly pacote range manifest for vue@^2.5.17 fetched in 23881ms
+76 http fetch GET 200 https://registry.npmjs.org/fsevents 1504ms
+77 silly fetchPackageMetaData error for resolve-url-loader@^2.3.1 Response timeout while trying to fetch https://registry.npmjs.org/resolve-url-loader (over 30000ms)
+78 silly fetchPackageMetaData error for sass-loader@^8.0.0 Response timeout while trying to fetch https://registry.npmjs.org/sass-loader (over 30000ms)
+79 http fetch GET 200 https://registry.npmjs.org/is-extglob 298ms
+80 silly fetchPackageMetaData error for bootstrap@^4.0.0 Response timeout while trying to fetch https://registry.npmjs.org/bootstrap (over 30000ms)
+81 http fetch GET 200 https://registry.npmjs.org/fill-range 1047ms
+82 http fetch GET 200 https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz 100ms
+83 silly pacote range manifest for fill-range@^7.0.1 fetched in 1163ms
+84 http fetch GET 200 https://registry.npmjs.org/binary-extensions 591ms
+85 http fetch GET 200 https://registry.npmjs.org/fsevents/-/fsevents-2.1.3.tgz 618ms
+86 silly pacote range manifest for fsevents@~2.1.2 fetched in 2138ms
+87 http fetch GET 200 https://registry.npmjs.org/picomatch 802ms
+88 http fetch GET 200 https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz 664ms
+89 silly pacote range manifest for is-extglob@^2.1.1 fetched in 977ms
+90 http fetch GET 200 https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.0.0.tgz 450ms
+91 silly pacote range manifest for binary-extensions@^2.0.0 fetched in 1050ms
+92 http fetch GET 200 https://registry.npmjs.org/to-regex-range 552ms
+93 http fetch GET 200 https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 1838ms
+94 silly pacote range manifest for normalize-path@^3.0.0 fetched in 1855ms
+95 http fetch GET 200 https://registry.npmjs.org/picomatch 1639ms
+96 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.2.2.tgz 502ms
+97 silly pacote range manifest for picomatch@^2.2.1 fetched in 1320ms
+98 http fetch GET 200 https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz 1078ms
+99 silly pacote range manifest for to-regex-range@^5.0.1 fetched in 1641ms
+100 http fetch GET 200 https://registry.npmjs.org/is-number 204ms
+101 http fetch GET 200 https://registry.npmjs.org/picomatch/-/picomatch-2.2.2.tgz 872ms
+102 silly pacote range manifest for picomatch@^2.0.4 fetched in 2531ms
+103 http fetch GET 200 https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz 786ms
+104 silly pacote range manifest for is-number@^7.0.0 fetched in 1001ms
+105 http fetch GET 200 https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz 19180ms
+106 silly pacote range manifest for lodash@^4.17.13 fetched in 36354ms
+107 http fetch GET 200 https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz 8841ms
+108 silly pacote range manifest for normalize-path@~3.0.0 fetched in 9015ms
+109 silly pacote range manifest for lodash@^4.17.13 fetched in 24ms
+110 silly resolveWithNewModule lodash@4.17.15 checking installable status
+111 silly pacote range manifest for axios@^0.19 fetched in 36ms
+112 silly resolveWithNewModule axios@0.19.2 checking installable status
+113 silly pacote range manifest for vue-template-compiler@^2.6.10 fetched in 8ms
+114 silly resolveWithNewModule vue-template-compiler@2.6.11 checking installable status
+115 silly pacote range manifest for popper.js@^1.12 fetched in 51ms
+116 silly resolveWithNewModule popper.js@1.16.1 checking installable status
+117 silly pacote range manifest for vue@^2.5.17 fetched in 60ms
+118 silly resolveWithNewModule vue@2.6.11 checking installable status
+119 silly pacote range manifest for sass@^1.20.1 fetched in 94ms
+120 silly resolveWithNewModule sass@1.26.8 checking installable status
+121 http fetch GET 200 https://registry.npmjs.org/jquery 1020ms
+122 http fetch GET 304 https://registry.npmjs.org/laravel-mix 1051ms (from cache)
+123 http fetch GET 200 https://registry.npmjs.org/sass-loader 1066ms
+124 http fetch GET 200 https://registry.npmjs.org/laravel-mix/-/laravel-mix-5.0.4.tgz 474ms
+125 silly pacote range manifest for laravel-mix@^5.0.1 fetched in 1553ms
+126 silly resolveWithNewModule laravel-mix@5.0.4 checking installable status
+127 http fetch GET 200 https://registry.npmjs.org/sass-loader/-/sass-loader-8.0.2.tgz 2114ms
+128 silly pacote range manifest for sass-loader@^8.0.0 fetched in 3197ms
+129 silly resolveWithNewModule sass-loader@8.0.2 checking installable status
+130 http fetch GET 200 https://registry.npmjs.org/cross-env 4837ms
+131 http fetch GET 200 https://registry.npmjs.org/jquery/-/jquery-3.5.1.tgz 4451ms
+132 silly pacote range manifest for jquery@^3.2 fetched in 5491ms
+133 silly resolveWithNewModule jquery@3.5.1 checking installable status
+134 http fetch GET 200 https://registry.npmjs.org/cross-env/-/cross-env-7.0.2.tgz 769ms
+135 silly pacote range manifest for cross-env@^7.0 fetched in 5624ms
+136 silly resolveWithNewModule cross-env@7.0.2 checking installable status
+137 http fetch GET 200 https://registry.npmjs.org/resolve-url-loader 8940ms
+138 http fetch GET 200 https://registry.npmjs.org/resolve-url-loader/-/resolve-url-loader-2.3.2.tgz 229ms
+139 silly pacote range manifest for resolve-url-loader@^2.3.1 fetched in 9188ms
+140 silly resolveWithNewModule resolve-url-loader@2.3.2 checking installable status
+141 http fetch GET 200 https://registry.npmjs.org/bootstrap 9884ms
+142 http fetch GET 200 https://registry.npmjs.org/bootstrap/-/bootstrap-4.5.0.tgz 9208ms
+143 silly pacote range manifest for bootstrap@^4.0.0 fetched in 19113ms
+144 silly resolveWithNewModule bootstrap@4.5.0 checking installable status
+145 silly pacote version manifest for follow-redirects@1.5.10 fetched in 18ms
+146 silly resolveWithNewModule follow-redirects@1.5.10 checking installable status
+147 silly pacote version manifest for debug@=3.1.0 fetched in 11ms
+148 silly resolveWithNewModule debug@3.1.0 checking installable status
+149 silly pacote version manifest for ms@2.0.0 fetched in 17ms
+150 silly resolveWithNewModule ms@2.0.0 checking installable status
+151 http fetch GET 200 https://registry.npmjs.org/cross-spawn 1845ms
+152 http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz 148ms
+153 silly pacote range manifest for cross-spawn@^7.0.1 fetched in 2010ms
+154 silly resolveWithNewModule cross-spawn@7.0.3 checking installable status
+155 http fetch GET 200 https://registry.npmjs.org/shebang-command 99ms
+156 http fetch GET 200 https://registry.npmjs.org/path-key 164ms
+157 http fetch GET 200 https://registry.npmjs.org/which 236ms
+158 http fetch GET 200 https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz 83ms
+159 silly pacote range manifest for path-key@^3.1.0 fetched in 256ms
+160 silly resolveWithNewModule path-key@3.1.1 checking installable status
+161 http fetch GET 200 https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz 177ms
+162 silly pacote range manifest for shebang-command@^2.0.0 fetched in 284ms
+163 silly resolveWithNewModule shebang-command@2.0.0 checking installable status
+164 http fetch GET 200 https://registry.npmjs.org/which/-/which-2.0.2.tgz 81ms
+165 silly pacote range manifest for which@^2.0.1 fetched in 327ms
+166 silly resolveWithNewModule which@2.0.2 checking installable status
+167 http fetch GET 200 https://registry.npmjs.org/shebang-regex 84ms
+168 http fetch GET 200 https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz 100ms
+169 silly pacote range manifest for shebang-regex@^3.0.0 fetched in 198ms
+170 silly resolveWithNewModule shebang-regex@3.0.0 checking installable status
+171 http fetch GET 200 https://registry.npmjs.org/isexe 95ms
+172 http fetch GET 200 https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz 353ms
+173 silly pacote range manifest for isexe@^2.0.0 fetched in 465ms
+174 silly resolveWithNewModule isexe@2.0.0 checking installable status
+175 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-syntax-dynamic-import 1596ms
+176 http fetch GET 200 https://registry.npmjs.org/babel-merge 1630ms
+177 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.8.3.tgz 120ms
+178 silly pacote range manifest for @babel/plugin-syntax-dynamic-import@^7.2.0 fetched in 1732ms
+179 silly resolveWithNewModule @babel/plugin-syntax-dynamic-import@7.8.3 checking installable status
+180 http fetch GET 200 https://registry.npmjs.org/clean-css 877ms
+181 http fetch GET 200 https://registry.npmjs.org/@babel%2fplugin-proposal-object-rest-spread 3013ms
+182 http fetch GET 200 https://registry.npmjs.org/jquery 62566ms
+183 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 3862ms
+184 http fetch GET 200 https://registry.npmjs.org/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.10.1.tgz 846ms
+185 silly pacote range manifest for @babel/plugin-proposal-object-rest-spread@^7.2.0 fetched in 3872ms
+186 silly resolveWithNewModule @babel/plugin-proposal-object-rest-spread@7.10.1 checking installable status
+187 http fetch GET 200 https://registry.npmjs.org/bootstrap 63149ms
+188 http fetch GET 200 https://registry.npmjs.org/sass-loader 63201ms
+189 http fetch GET 200 https://registry.npmjs.org/@babel/core/-/core-7.10.2.tgz 753ms
+190 silly pacote range manifest for @babel/core@^7.2.0 fetched in 4630ms
+191 silly resolveWithNewModule @babel/core@7.10.2 checking installable status
+192 http fetch GET 200 https://registry.npmjs.org/resolve-url-loader 64048ms
+193 http fetch GET 200 https://registry.npmjs.org/cross-env 64171ms
+194 http fetch GET 200 https://registry.npmjs.org/clean-css/-/clean-css-4.2.3.tgz 2331ms
+195 silly pacote range manifest for clean-css@^4.1.3 fetched in 3232ms
+196 silly resolveWithNewModule clean-css@4.2.3 checking installable status
+197 http fetch GET 200 https://registry.npmjs.org/concatenate 1228ms
+198 http fetch GET 200 https://registry.npmjs.org/concatenate/-/concatenate-0.0.2.tgz 195ms
+199 silly pacote version manifest for concatenate@0.0.2 fetched in 1437ms
+200 silly resolveWithNewModule concatenate@0.0.2 checking installable status
+201 http fetch GET 200 https://registry.npmjs.org/dotenv 366ms
+202 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 6461ms
+203 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.10.2.tgz 541ms
+204 silly pacote range manifest for @babel/runtime@^7.2.0 fetched in 7019ms
+205 silly resolveWithNewModule @babel/runtime@7.10.2 checking installable status
+206 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-6.2.0.tgz 624ms
+207 silly pacote range manifest for dotenv@^6.2.0 fetched in 1005ms
+208 silly resolveWithNewModule dotenv@6.2.0 checking installable status
+209 http fetch GET 200 https://registry.npmjs.org/extract-text-webpack-plugin 1113ms
+210 http fetch GET 200 https://registry.npmjs.org/collect.js 4322ms
+211 http fetch GET 200 https://registry.npmjs.org/css-loader 3229ms
+212 http fetch GET 200 https://registry.npmjs.org/dotenv-expand 1202ms
+213 http fetch GET 200 https://registry.npmjs.org/css-loader/-/css-loader-1.0.1.tgz 409ms
+214 silly pacote range manifest for css-loader@^1.0.1 fetched in 3655ms
+215 silly resolveWithNewModule css-loader@1.0.1 checking installable status
+216 http fetch GET 200 https://registry.npmjs.org/extract-text-webpack-plugin/-/extract-text-webpack-plugin-4.0.0-beta.0.tgz 512ms
+217 silly pacote version manifest for extract-text-webpack-plugin@v4.0.0-beta.0 fetched in 1639ms
+218 silly resolveWithNewModule extract-text-webpack-plugin@4.0.0-beta.0 checking installable status
+219 http fetch GET 200 https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-4.2.0.tgz 506ms
+220 silly pacote range manifest for dotenv-expand@^4.2.0 fetched in 1718ms
+221 silly resolveWithNewModule dotenv-expand@4.2.0 checking installable status
+222 http fetch GET 200 https://registry.npmjs.org/file-loader 1147ms
+223 http fetch GET 200 https://registry.npmjs.org/friendly-errors-webpack-plugin 1513ms
+224 http fetch GET 200 https://registry.npmjs.org/file-loader/-/file-loader-2.0.0.tgz 665ms
+225 silly pacote range manifest for file-loader@^2.0.0 fetched in 1830ms
+226 silly resolveWithNewModule file-loader@2.0.0 checking installable status
+227 http fetch GET 200 https://registry.npmjs.org/fs-extra 1752ms
+228 http fetch GET 200 https://registry.npmjs.org/glob 859ms
+229 http fetch GET 200 https://registry.npmjs.org/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-1.7.0.tgz 1151ms
+230 silly pacote range manifest for friendly-errors-webpack-plugin@^1.6.1 fetched in 2674ms
+231 silly resolveWithNewModule friendly-errors-webpack-plugin@1.7.0 checking installable status
+232 http fetch GET 200 https://registry.npmjs.org/html-loader 404ms
+233 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-7.0.1.tgz 1447ms
+234 silly pacote range manifest for fs-extra@^7.0.1 fetched in 3226ms
+235 silly resolveWithNewModule fs-extra@7.0.1 checking installable status
+236 http fetch GET 200 https://registry.npmjs.org/html-loader/-/html-loader-0.5.5.tgz 175ms
+237 silly pacote range manifest for html-loader@^0.5.5 fetched in 591ms
+238 silly resolveWithNewModule html-loader@0.5.5 checking installable status
+239 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.1.6.tgz 824ms
+240 silly pacote range manifest for glob@^7.1.2 fetched in 1714ms
+241 silly resolveWithNewModule glob@7.1.6 checking installable status
+242 http fetch GET 200 https://registry.npmjs.org/collect.js/-/collect.js-4.27.3.tgz 4490ms
+243 silly pacote range manifest for collect.js@^4.12.8 fetched in 8820ms
+244 silly resolveWithNewModule collect.js@4.27.3 checking installable status
+245 http fetch GET 200 https://registry.npmjs.org/md5 533ms
+246 http fetch GET 200 https://registry.npmjs.org/optimize-css-assets-webpack-plugin 811ms
+247 http fetch GET 200 https://registry.npmjs.org/optimize-css-assets-webpack-plugin/-/optimize-css-assets-webpack-plugin-5.0.3.tgz 139ms
+248 silly pacote range manifest for optimize-css-assets-webpack-plugin@^5.0.1 fetched in 975ms
+249 silly resolveWithNewModule optimize-css-assets-webpack-plugin@5.0.3 checking installable status
+250 http fetch GET 200 https://registry.npmjs.org/imagemin 1839ms
+251 http fetch GET 200 https://registry.npmjs.org/img-loader 1931ms
+252 http fetch GET 200 https://registry.npmjs.org/imagemin/-/imagemin-6.1.0.tgz 140ms
+253 silly pacote range manifest for imagemin@^6.0.0 fetched in 1996ms
+254 silly resolveWithNewModule imagemin@6.1.0 checking installable status
+255 http fetch GET 200 https://registry.npmjs.org/md5/-/md5-2.2.1.tgz 1307ms
+256 silly pacote range manifest for md5@^2.2.1 fetched in 1850ms
+257 silly resolveWithNewModule md5@2.2.1 checking installable status
+258 http fetch GET 200 https://registry.npmjs.org/img-loader/-/img-loader-3.0.1.tgz 552ms
+259 silly pacote range manifest for img-loader@^3.0.0 fetched in 2495ms
+260 silly resolveWithNewModule img-loader@3.0.1 checking installable status
+261 http fetch GET 200 https://registry.npmjs.org/postcss-loader 855ms
+262 http fetch GET 200 https://registry.npmjs.org/postcss-loader/-/postcss-loader-3.0.0.tgz 653ms
+263 silly pacote range manifest for postcss-loader@^3.0.0 fetched in 1524ms
+264 silly resolveWithNewModule postcss-loader@3.0.0 checking installable status
+265 http fetch GET 200 https://registry.npmjs.org/style-loader 2286ms
+266 http fetch GET 200 https://registry.npmjs.org/style-loader/-/style-loader-0.23.1.tgz 443ms
+267 silly pacote range manifest for style-loader@^0.23.1 fetched in 2744ms
+268 silly resolveWithNewModule style-loader@0.23.1 checking installable status
+269 http fetch GET 200 https://registry.npmjs.org/terser 2987ms
+270 http fetch GET 200 https://registry.npmjs.org/terser-webpack-plugin 5413ms
+271 http fetch GET 200 https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-2.3.7.tgz 1145ms
+272 silly pacote range manifest for terser-webpack-plugin@^2.2.3 fetched in 6575ms
+273 silly resolveWithNewModule terser-webpack-plugin@2.3.7 checking installable status
+274 http fetch GET 200 https://registry.npmjs.org/vue-loader 9663ms
+275 http fetch GET 200 https://registry.npmjs.org/vue-loader/-/vue-loader-15.9.2.tgz 851ms
+276 silly pacote range manifest for vue-loader@^15.4.2 fetched in 10538ms
+277 silly resolveWithNewModule vue-loader@15.9.2 checking installable status
+278 http fetch GET 200 https://registry.npmjs.org/webpack-cli 7988ms
+279 silly fetchPackageMetaData error for babel-loader@^8.0.4 Response timeout while trying to fetch https://registry.npmjs.org/babel-loader (over 30000ms)
+280 silly fetchPackageMetaData error for @babel/plugin-transform-runtime@^7.2.0 Response timeout while trying to fetch https://registry.npmjs.org/@babel%2fplugin-transform-runtime (over 30000ms)
+281 http fetch GET 200 https://registry.npmjs.org/webpack-dev-server 5282ms
+282 http fetch GET 200 https://registry.npmjs.org/webpack-cli/-/webpack-cli-3.3.11.tgz 1976ms
+283 silly pacote range manifest for webpack-cli@^3.1.2 fetched in 9986ms
+284 silly resolveWithNewModule webpack-cli@3.3.11 checking installable status
+285 silly fetchPackageMetaData error for autoprefixer@^9.4.2 Response timeout while trying to fetch https://registry.npmjs.org/autoprefixer (over 30000ms)
+286 http fetch GET 200 https://registry.npmjs.org/webpack-notifier 3381ms
+287 http fetch GET 200 https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-3.11.0.tgz 4000ms
+288 silly pacote range manifest for webpack-dev-server@^3.1.14 fetched in 9305ms
+289 silly resolveWithNewModule webpack-dev-server@3.11.0 checking installable status
+290 http fetch GET 200 https://registry.npmjs.org/yargs 5468ms
+291 http fetch GET 200 https://registry.npmjs.org/yargs/-/yargs-12.0.5.tgz 1659ms
+292 silly pacote range manifest for yargs@^12.0.5 fetched in 7151ms
+293 silly resolveWithNewModule yargs@12.0.5 checking installable status
+294 http fetch GET 200 https://registry.npmjs.org/terser/-/terser-3.17.0.tgz 23670ms
+295 silly pacote range manifest for terser@^3.11.0 fetched in 26670ms
+296 silly resolveWithNewModule terser@3.17.0 checking installable status
+297 http fetch GET 200 https://registry.npmjs.org/@babel%2fpreset-env 40735ms
+298 http fetch GET 200 https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.10.2.tgz 391ms
+299 silly pacote range manifest for @babel/preset-env@^7.2.0 fetched in 41184ms
+300 silly resolveWithNewModule @babel/preset-env@7.10.2 checking installable status
+301 silly fetchPackageMetaData error for webpack@^4.36.1 Response timeout while trying to fetch https://registry.npmjs.org/webpack (over 30000ms)
+302 silly fetchPackageMetaData error for babel-merge@^2.0.1 sha512-puTQQxuzS+0JlMyVdfsTVaCgzqjBXKPMv7oUANpYcHFY+7IptWZ4PZDYX+qBxrRMtrriuBA44LkKpS99EJzqVA== integrity checksum failed when using sha512: wanted sha512-puTQQxuzS+0JlMyVdfsTVaCgzqjBXKPMv7oUANpYcHFY+7IptWZ4PZDYX+qBxrRMtrriuBA44LkKpS99EJzqVA== but got sha512-et1FufZmaMiQf+qayU3hPBYVlPOz10lN9GZVcjmeoVzAMwbBblMDg+zOln7FDpvpFPtDWWsCyOpZnakotybwCQ==. (14341 bytes)
+303 http fetch GET 200 https://registry.npmjs.org/webpack-merge 18013ms
+304 http fetch GET 200 https://registry.npmjs.org/webpack-merge/-/webpack-merge-4.2.2.tgz 433ms
+305 silly pacote range manifest for webpack-merge@^4.1.0 fetched in 18463ms
+306 silly resolveWithNewModule webpack-merge@4.2.2 checking installable status
+307 http fetch GET 200 https://registry.npmjs.org/webpack-notifier/-/webpack-notifier-1.8.0.tgz 15360ms
+308 silly pacote range manifest for webpack-notifier@^1.5.1 fetched in 18755ms
+309 silly resolveWithNewModule webpack-notifier@1.8.0 checking installable status
+310 http fetch GET 200 https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz 53930ms
+311 silly pacote range manifest for chokidar@^2.0.3 fetched in 53956ms
+312 warn deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+313 silly resolveWithNewModule chokidar@2.1.8 checking installable status
+314 timing stage:rollbackFailedOptional Completed in 1ms
+315 timing stage:runTopLevelLifecycles Completed in 113306ms
+316 silly saveTree APO
+316 silly saveTree +-- axios@0.19.2
+316 silly saveTree | `-- follow-redirects@1.5.10
+316 silly saveTree |   `-- debug@3.1.0
+316 silly saveTree |     `-- ms@2.0.0
+316 silly saveTree +-- bootstrap@4.5.0
+316 silly saveTree +-- cross-env@7.0.2
+316 silly saveTree | `-- cross-spawn@7.0.3
+316 silly saveTree |   +-- path-key@3.1.1
+316 silly saveTree |   +-- shebang-command@2.0.0
+316 silly saveTree |   | `-- shebang-regex@3.0.0
+316 silly saveTree |   `-- which@2.0.2
+316 silly saveTree |     `-- isexe@2.0.0
+316 silly saveTree +-- jquery@3.5.1
+316 silly saveTree +-- laravel-mix@5.0.4
+316 silly saveTree | +-- @babel/core@7.10.2
+316 silly saveTree | | `-- lodash@4.17.15
+316 silly saveTree | +-- @babel/plugin-proposal-object-rest-spread@7.10.1
+316 silly saveTree | +-- @babel/plugin-syntax-dynamic-import@7.8.3
+316 silly saveTree | +-- @babel/preset-env@7.10.2
+316 silly saveTree | +-- @babel/runtime@7.10.2
+316 silly saveTree | +-- chokidar@2.1.8
+316 silly saveTree | +-- clean-css@4.2.3
+316 silly saveTree | +-- collect.js@4.27.3
+316 silly saveTree | +-- concatenate@0.0.2
+316 silly saveTree | +-- css-loader@1.0.1
+316 silly saveTree | +-- dotenv-expand@4.2.0
+316 silly saveTree | +-- dotenv@6.2.0
+316 silly saveTree | +-- extract-text-webpack-plugin@4.0.0-beta.0
+316 silly saveTree | +-- file-loader@2.0.0
+316 silly saveTree | +-- friendly-errors-webpack-plugin@1.7.0
+316 silly saveTree | +-- fs-extra@7.0.1
+316 silly saveTree | +-- glob@7.1.6
+316 silly saveTree | +-- html-loader@0.5.5
+316 silly saveTree | +-- imagemin@6.1.0
+316 silly saveTree | +-- img-loader@3.0.1
+316 silly saveTree | +-- lodash@4.17.15
+316 silly saveTree | +-- md5@2.2.1
+316 silly saveTree | +-- optimize-css-assets-webpack-plugin@5.0.3
+316 silly saveTree | +-- postcss-loader@3.0.0
+316 silly saveTree | +-- style-loader@0.23.1
+316 silly saveTree | +-- terser-webpack-plugin@2.3.7
+316 silly saveTree | +-- terser@3.17.0
+316 silly saveTree | +-- vue-loader@15.9.2
+316 silly saveTree | +-- webpack-cli@3.3.11
+316 silly saveTree | +-- webpack-dev-server@3.11.0
+316 silly saveTree | +-- webpack-merge@4.2.2
+316 silly saveTree | +-- webpack-notifier@1.8.0
+316 silly saveTree | `-- yargs@12.0.5
+316 silly saveTree +-- lodash@4.17.15
+316 silly saveTree +-- popper.js@1.16.1
+316 silly saveTree +-- resolve-url-loader@2.3.2
+316 silly saveTree +-- sass-loader@8.0.2
+316 silly saveTree +-- sass@1.26.8
+316 silly saveTree +-- vue-template-compiler@2.6.11
+316 silly saveTree `-- vue@2.6.11
+317 verbose type body-timeout
+318 verbose stack FetchError: Response timeout while trying to fetch https://registry.npmjs.org/babel-loader (over 30000ms)
+318 verbose stack     at Timeout._onTimeout (C:\Program Files\nodejs\node_modules\npm\node_modules\node-fetch-npm\src\body.js:189:16)
+318 verbose stack     at listOnTimeout (internal/timers.js:549:17)
+318 verbose stack     at processTimers (internal/timers.js:492:7)
+319 verbose cwd C:\xampp\htdocs\APO
+320 verbose Windows_NT 6.3.9600
+321 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+322 verbose node v12.18.0
+323 verbose npm  v6.14.4
+324 error Response timeout while trying to fetch https://registry.npmjs.org/babel-loader (over 30000ms)
+325 verbose exit [ 1, true ]
