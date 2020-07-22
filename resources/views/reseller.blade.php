@@ -44,14 +44,14 @@
                             jumlah produk  : {{$pro->qty_p}}</br>
                             </a>
                             </div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$pro->id}}"> Pesan produk </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a{{$pro->id}}"> Pesan produk </button>
                         </div>
                       </div>
 
 
 
                         <!-- The Modal -->
-                        <div class="modal" id="{{$pro->id}}">
+                        <div class="modal" id="a{{$pro->id}}">
                           <div class="modal-dialog">
                             <div class="modal-content">
 
