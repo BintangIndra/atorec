@@ -44,7 +44,7 @@
                             jumlah produk  : {{$pro->qty_p}}</br>
                             </a>
                             </div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=#{{$pro->nama_p}}> Pesan produk </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$pro->nama_p}}"> Pesan produk </button>
                         </div>
                       </div>
 
