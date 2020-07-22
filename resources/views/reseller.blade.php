@@ -44,14 +44,14 @@
                             jumlah produk  : {{$pro->qty_p}}</br>
                             </a>
                             </div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$pro->nama_p}}"> Pesan produk </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{$pro->id}}"> Pesan produk </button>
                         </div>
                       </div>
 
 
 
                         <!-- The Modal -->
-                        <div class="modal" id="{{$pro->nama_p}}">
+                        <div class="modal" id="{{$pro->id}}">
                           <div class="modal-dialog">
                             <div class="modal-content">
 
@@ -69,7 +69,7 @@
                                 <form method="post" action="{{ route('addproduk') }}">
                                     @csrf
                                     <input type="number" name="qty">
-                                    <input type="hidden" name="OP" value={{$pro->id}}>
+                                    <input type="hidden" name="OP" value="{{$pro->id}}">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Masukkan') }}
                                     </button>
