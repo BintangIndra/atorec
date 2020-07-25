@@ -37,17 +37,18 @@
                         <td>{{$a->alamat}}</td>
                         <td>{{$a->tr_qty}}</td>
                         <td>{{$a->produk->nama_p}}</td>
-                        <td><form action="{{ route('transaksi_kirim') }}" method="POST" name="kirim" id="kirim">
+                        <td><form action="{{ route('transaksi_kirim') }}" method="POST" name="kirim{{$a->id}}" id="kirim{{$a->id}}">
                             @csrf
-                            <input type="hidden" id="id" name="id" value="{{$a->id}}" form="kirim">
+                            <input type="hidden" id="id" name="id" value="{{$a->id}}" form="kirim{{$a->id}}">
                             @if($a->status == "Sedang Ditinjau")
-                            <select name="status" id="status" form="kirim">
+                            <select name="status" id="status" form="kirim{{$a->id}}">
                                 <option value="{{$a->status}}">Sedang Ditinjau</option>
                                 <option value="Telah Dikirim">Telah Dikirim</option>
+                            </select>
+                            <td><button class="btn btn-danger" type="submit" value="submit" form="kirim{{$a->id}}">Ubah</button></td>
                             @else
                                 <label>{{$a->status}}</label>
                             @endif
-                            <td><button class="btn btn-danger" type="submit" value="submit" form="kirim">Ubah</button></td>
                         </form></td>
                         </tr>
                     @endforeach

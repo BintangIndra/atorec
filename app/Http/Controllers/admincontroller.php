@@ -16,6 +16,8 @@ class admincontroller extends Controller
     }
 
     public function aktivasi(Request $request){
+        $this->validate($request,[
+           'status_u' => 'required']);
     	$anggota = User::find($request->id_u);
     	$anggota->aktif = $request->status_u;
     	$anggota->save();
@@ -39,6 +41,12 @@ class admincontroller extends Controller
     }
 
     public function update(Request $request,$admin){
+        $this->validate($request,[
+           'nama_p' => 'required',
+           'harga' => 'required|numeric',
+           'harga_r' => 'required',
+           'qty_p' => 'required',
+           'img_url' => 'required']);
         $produk = produk::find($admin);
         $produk->nama_p = $request->nama_p;
         $produk->harga = $request->harga;
@@ -50,6 +58,12 @@ class admincontroller extends Controller
     }
 
     public function store(Request $request){
+        $this->validate($request,[
+           'nama_p' => 'required',
+           'harga' => 'required|numeric',
+           'harga_r' => 'required',
+           'qty_p' => 'required',
+           'img_url' => 'required']);
         produk::create([
         'nama_p' => $request->nama_p,
         'harga' => $request->harga,
@@ -61,6 +75,7 @@ class admincontroller extends Controller
     }
 
     public function psearch(Request $request){
+        $this->validate($request,['search' => 'required']);
         $produk = produk::where('nama_p','like','%'.$request->search.'%')->paginate(5);
         return view('admin.produk',['produk' => $produk]);
     }
@@ -71,6 +86,7 @@ class admincontroller extends Controller
     }
 
     public function trakirim(Request $request){
+        $this->validate($request,['status' => 'required']);
         $transaksi = trans_reseller::find($request->id);
         $transaksi->status = $request->status;
         $transaksi->save();

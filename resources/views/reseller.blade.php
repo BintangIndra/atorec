@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('menu')
-<a class="dropdown-item" data-toggle="modal" data-target=#cart> Pesan produk </a>
+<a class="dropdown-item" data-toggle="modal" data-target=#cart> Shop cart </a>
 <a class="dropdown-item" data-toggle="modal" data-target=#pesanan> Barang Pesanan Anda </a>
 @endsection
 
@@ -19,10 +19,18 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
-
                     @if(Auth::user()->aktif == 1)
+
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                 @foreach ($errors->all() as $error)
+                                  <li>{{ $error }}</li>
+                                 @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <h2>Produk</h2>
                     <form method="post" action="{{route('rsearch') }}">
                         @csrf   
@@ -130,14 +138,14 @@
                 <td>{{$t->alamat}}</td>
                 <td>{{$t->tr_qty}}</td>
                 <td>
-                <form action="{{ route('rkonfirm') }}" method="POST" name="konfirmasi" id="konfirmasi">
+                <form action="{{ route('rkonfirm') }}" method="POST" name="konfirmasi{{$t->id}}" id="konfirmasi{{$t->id}}">
                     @csrf
-                    <input type="hidden" id="id" name="id" value="{{$t->id}}" form="konfirmasi">
+                    <input type="hidden" id="id" name="id" value="{{$t->id}}" form="konfirmasi{{$t->id}}">
                     @if($t->status == "Telah Dikirim")
-                    <select name="status" id="status" form="konfirmasi">
+                    <select name="status" id="status" form="konfirmasi{{$t->id}}">
                         <option value="{{$t->status}}">Telah Dikirim</option>
                         <option value="Selesai">Telah Diterima</option>
-                        <td><button class="btn btn-danger" type="submit" value="submit" form="konfirmasi">Ubah</button></td>
+                        <td><button class="btn btn-danger" type="submit" value="submit" form="konfirmasi{{$t->id}}">Ubah</button></td>
                     @else
                         <label>{{$t->status}}</label>
                     @endif                                                        

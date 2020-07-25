@@ -23,6 +23,8 @@ class resellercontroller extends Controller
     }
 
     public function rsearch(Request $request){
+    	$this->validate($request,[
+           'search' => 'required']);
         $produk = produk::where('nama_p','like','%'.$request->search.'%')->paginate(5);
         $pesanan = trans_reseller::where('id_u', Auth::id())->get();
     	$i=0;
@@ -39,6 +41,8 @@ class resellercontroller extends Controller
     @return cookie
 	*/
     public function addproduk(Request $request){
+    	$produk = produk::find($request->OP);
+    	$this->validate($request,['qty' => 'required|numeric|min:1|max:'.$produk->qty_p]);
     	$OP=[$request->OP => [$request->qty]];
 		$AP=session()->get('$cart');
 		//mendapatkan barang yg akan ditambahkan dan mendapatkan isi shop cart
@@ -93,6 +97,9 @@ class resellercontroller extends Controller
     }
 
     public function addtrans(Request $request){
+    	$this->validate($request,[
+           'atas_nama' => 'required',
+           'alamat' => 'required']);
     	if (session('$cart') == null){
 	    	return view('/transaksi');
     	}
@@ -116,6 +123,7 @@ class resellercontroller extends Controller
     }
 
     public function rkonfirm(Request $request){
+    	$this->validate($request,['status' => 'required']);
     	$transaksi = trans_reseller::find($request->id);
         $transaksi->status = $request->status;
         $transaksi->save();
