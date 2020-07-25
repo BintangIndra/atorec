@@ -98,7 +98,7 @@ class resellercontroller extends Controller
 
     public function addtrans(Request $request){
     	$this->validate($request,[
-           'atas_nama' => 'required',
+           'atasnama' => 'required',
            'alamat' => 'required']);
     	if (session('$cart') == null){
 	    	return view('/transaksi');
