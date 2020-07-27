@@ -88,8 +88,12 @@ class admincontroller extends Controller
     public function trakirim(Request $request){
         $this->validate($request,['status' => 'required']);
         $transaksi = trans_reseller::find($request->id);
+        $produk = produk::find($transaksi->produk->id);
+        $produk->qty_p = $produk->qty_p - $transaksi->tr_qty;
+        $produk->save();
         $transaksi->status = $request->status;
         $transaksi->save();
+
         return redirect('admin.transaksi');
     }
 }
