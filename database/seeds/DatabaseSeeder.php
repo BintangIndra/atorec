@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
-        DB::table('users')->insert([
+        /*DB::table('users')->insert([
             'nama_u' => 'susanto',
             'alamat_u' => 'solo baru',
             'email' => 'susanto@tanto.com',
@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
             'aktif' => 1,
         ]);
-        
+        */
         DB::table('users')->insert([
             'nama_u' => 'pemilik',
             'alamat_u' => 'solo baru',
