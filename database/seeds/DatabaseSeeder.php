@@ -23,14 +23,14 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
             'aktif' => 1,
         ]);
-
+        
         DB::table('users')->insert([
             'nama_u' => 'pemilik',
             'alamat_u' => 'solo baru',
             'email' => 'pemilik@punya.com',
             'password' => Hash::make('kenureeve'),
             'no_hp' => '082233121232',
-            'role' => 'admin',
+            'role' => 'owner',
             'aktif' => 1,
         ]);
     }
