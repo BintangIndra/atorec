@@ -52,4 +52,5 @@ Route::post('admin.transaksi/kirim','admincontroller@trakirim')->name('transaksi
 
 
 
-Route::resource('/owner', 'ownercontroller')->middleware('can:isowner');
+Route::get('owner.index', 'ownercontroller@index')->middleware('can:isowner')->name('owner.index');
+Route::get('owner.transaksi', 'ownercontroller@transaksi')->middleware('can:isowner')->name('owner.transaksi');

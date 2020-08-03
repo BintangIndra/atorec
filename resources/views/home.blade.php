@@ -20,6 +20,8 @@
                         <script type="text/javascript">window.location.href="{{route('reseller.index')}}";</script>
                     @elseif(Auth::user()->aktif == 1 && Auth::user()->role == 'admin')
                         <script type="text/javascript">window.location.href="{{route('admin.index')}}";</script>
+                    @elseif(Auth::user()->aktif == 1 && Auth::user()->role == 'owner')
+                        <script type="text/javascript">window.location.href="{{route('owner.index')}}";</script>
                     @else
                         </br>
                         <a>mohon maaf akun ada belum aktif,</a>

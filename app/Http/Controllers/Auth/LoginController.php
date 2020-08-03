@@ -73,7 +73,7 @@ class LoginController extends Controller
             return property_exists($this, 'redirectToadmin') ? $this->redirectToadmin : 'admin.index';
         }
         elseif($role == 'owner'){
-            return property_exists($this, 'redirectToowner') ? $this->redirectToowner : '/owner';
+            return property_exists($this, 'redirectToowner') ? $this->redirectToowner : 'owner.index';
         }
     }
 

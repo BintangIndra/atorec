@@ -118,11 +118,15 @@
                 2.Menambah edit dan hapus produk</br>
                 3.search produk</br>
                 4.Mengelola transaksi apakah barang sudah dikirim</br>
-            </p>
+                </p>
+                <h2>Owner</h2>
+                <p>
+                1.menampilkan data transaksi secara statistik</br>
+                2.aktivasi user baik admin / reseller<br>
+                </p>
             <h2>Next Update</h2>
             <p>
                 1.Menambah feature owner:</br>
-                - menampilkan data transaksi secara statistik</br>
                 - menampilkan data persebaran reseller dengan maps</br>
                 - menghitung modal, laba dll</br>
                 2.feature transaksi menggunakan kartu kredit</br>
@@ -176,10 +180,12 @@
                     Maksud pembuatan aplikasi ini adalah sebagai portofolio untuk pendamping
                     surat lamaran kerja<br>
 
-                    Untuk mengakses Aplikasi ini gunakan akun berikut:<br>
-                    admin:<br>
-                    Email : susanto@tanto.com<br>
-                    Password : keanureeve<br>
+                    Untuk mengakses Aplikasi ini silahkan register terlebih dahulu<br>
+                    untuk mengakses role admin silahkan hubungi contact diatas<br>
+                    untuk mengakses role owner gunakan akun berikut:<br>
+                    email : pemilik@punya.com
+                    password : kenureeve
+
                 </p>
             </br></br></br>
         </div>
