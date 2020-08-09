@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
             'aktif' => 1,
         ]);
-        */
+        
         DB::table('users')->insert([
             'nama_u' => 'pemilik',
             'alamat_u' => 'solo baru',
@@ -33,5 +33,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'owner',
             'aktif' => 1,
         ]);
+        */
+        factory(App\produk::class, 30)->create();
     }
 }

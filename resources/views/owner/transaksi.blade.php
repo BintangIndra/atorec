@@ -21,7 +21,63 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    @if(isset($jumlah[0]))
+                    <p>transaksi chart anda</p>
+                    <div class="dropdown">
+                      <button class="dropdown-toggle" data-toggle="dropdown">
+                        pilih bulan
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '1']) }}">
+                        Januari
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '2']) }}">
+                        Febuari
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '3']) }}">
+                        Maret
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '4']) }}">
+                        April
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '5']) }}">
+                        Mei
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '6']) }}">
+                        Juni
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '7']) }}">
+                        July
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '8']) }}">
+                        Agustus
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '9']) }}">
+                        September
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '10']) }}">
+                        Oktober
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '11']) }}">
+                        November
+                        </a>
+                        <a class="dropdown-item" 
+                        href="{{ route('owner.transaksi',['bulan' => '12']) }}">
+                        Desember
+                        </a>
+                      </div>
+                    </div>
+                    @if(isset($jumlah[0]))  
                     <script type="text/javascript">
                       google.charts.load('current', {'packages':['corechart']});
                       google.charts.setOnLoadCallback(drawChart);
@@ -48,9 +104,10 @@
 
                     <div id="curve_chart" style="width: 450px; height: 250px"></div>
                     @else
-                    <p>Bulan ini belum ada transaksi</p>
+                    <p>pada bulan yang anda pilih belum ada transaksi</p>
                     @endif
-
+                    <h4>export transaksi</h4>
+                    <a href="{{ route('owner.export',['bulan'=>'7']) }}" class="btn btn-primary">Export Excel</a>
                 
                 </div>
             </div>

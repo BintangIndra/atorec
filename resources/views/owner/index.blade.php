@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('menu')
-<a class="dropdown-item" href="{{ route('owner.transaksi') }}"> Lihat Transaksi </a>
+<a class="dropdown-item" href="{{ route('owner.transaksi',['bulan' => 'agda7']) }}"> Lihat Transaksi </a>
 @endsection
 
 @section('content')
