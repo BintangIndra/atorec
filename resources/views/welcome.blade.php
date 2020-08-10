@@ -94,6 +94,17 @@
             </div>
         </div>
         <div class="content">
+            <p>
+                    untuk mengakses role admin silahkan hubungi contact diatas<br>
+                    untuk mengakses role owner gunakan akun berikut:<br>
+                    email : pemilik@punya.com
+                    password : kenureeve<br>
+                    Untuk mengakses Aplikasi ini sebagai reseller gunakan akun berikut:<br>
+                    email: anto@gmail.com
+                    password: 7aysd7
+            </p>
+
+
             <h1 id="Features">Features</h1>
             <p>
                 Tujuan dari dibuatnya aplikasi ini adalah sebagai toko online branding produk sekaligus mempermudah pengurusan reseller.</p></br>
@@ -106,7 +117,7 @@
                 <h2>Reseller</h2>
                 <p>
                 1.Sistem register reseller dengan pola pengizinan pengaktifan oleh admin</br>
-                2.sistem beli product oleh reseller dan guest</br>
+                2.sistem beli product oleh reseller</br>
                 3.search produk</br>
                 4.shop cart</br>
                 5.konfirmasi barang pesanan yang telah diterima</br>
@@ -123,6 +134,7 @@
                 <p>
                 1.menampilkan data transaksi secara statistik</br>
                 2.aktivasi user baik admin / reseller<br>
+                3.mengeksport laporan menggunakan excel <br>
                 </p>
             <h2>Next Update</h2>
             <p>
@@ -179,15 +191,6 @@
                     dengan menggunakan local host xampp versi V.3.2.4<br>
                     Maksud pembuatan aplikasi ini adalah sebagai portofolio untuk pendamping
                     surat lamaran kerja<br>
-
-                    untuk mengakses role admin silahkan hubungi contact diatas<br>
-                    untuk mengakses role owner gunakan akun berikut:<br>
-                    email : pemilik@punya.com
-                    password : kenureeve
-                    Untuk mengakses Aplikasi ini sebagai reseller gunakan akun berikut:<br>
-                    email: anto@gmail.com
-                    password: 7aysd7
-
                 </p>
             </br></br></br>
         </div>
