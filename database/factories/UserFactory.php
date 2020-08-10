@@ -32,7 +32,7 @@ use Illuminate\Support\Str;
 		'tr_qty' => $faker -> numberBetween($min = 1, $max = 10),
         'status' => 'selesai',
         'created_at' => $faker -> dateTimeBetween($startDate = '2020-01-15 02:00:49', $endDate = '2020-08-15 02:00:49'),
-        'id_u' => $faker -> numberBetween($min = 1, $max = 3),
+        'id_u' => $faker -> numberBetween($min = 1, $max = 2),
         'id_p' => $faker -> numberBetween($min = 1, $max = 30),
 	];
 });
