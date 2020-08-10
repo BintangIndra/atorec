@@ -91,7 +91,7 @@
                         ]);
 
                         var options = {
-                          title: 'Jumlah Transaksi bulan  ini',
+                          title: 'jumlah tansaksi per 1 bulan',
                           curveType: 'function',
                           legend: { position: 'bottom' }
                         };
@@ -107,7 +107,7 @@
                     <p>pada bulan yang anda pilih belum ada transaksi</p>
                     @endif
                     <h4>export transaksi</h4>
-                    <a href="{{ route('owner.export',['bulan'=>'7']) }}" class="btn btn-primary">Export Excel</a>
+                    <a href="{{ route('owner.export',['bulan'=> $bulan]) }}" class="btn btn-primary">Export Excel</a>
                 
                 </div>
             </div>

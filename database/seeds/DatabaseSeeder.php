@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Seeder;
@@ -23,17 +24,17 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
             'aktif' => 1,
         ]);
-        
+        */
         DB::table('users')->insert([
-            'nama_u' => 'pemilik',
-            'alamat_u' => 'solo baru',
-            'email' => 'pemilik@punya.com',
-            'password' => Hash::make('kenureeve'),
-            'no_hp' => '082233121232',
-            'role' => 'owner',
+            'nama_u' => 'anto',
+            'alamat_u' => 'kalimantan tengah',
+            'email' => 'anto@gmail.com',
+            'password' => Hash::make('7aysd7'),
+            'no_hp' => '08978534612',
+            'role' => 'reseller',
             'aktif' => 1,
         ]);
-        */
-        factory(App\produk::class, 30)->create();
+        
+        factory(App\trans_reseller::class, 100)->create();
     }
 }

@@ -25,7 +25,7 @@ class ownercontroller extends Controller
         		->groupBy('created_at')
         		->get();
         //dd($bln);
-        return view('owner.transaksi',['jumlah' => $jumlah]);
+        return view('owner.transaksi',['jumlah' => $jumlah, 'bulan' => $bulan]);
     }
 
     public function export_excel(Request $request){

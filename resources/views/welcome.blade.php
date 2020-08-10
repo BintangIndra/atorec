@@ -180,11 +180,13 @@
                     Maksud pembuatan aplikasi ini adalah sebagai portofolio untuk pendamping
                     surat lamaran kerja<br>
 
-                    Untuk mengakses Aplikasi ini silahkan register terlebih dahulu<br>
                     untuk mengakses role admin silahkan hubungi contact diatas<br>
                     untuk mengakses role owner gunakan akun berikut:<br>
                     email : pemilik@punya.com
                     password : kenureeve
+                    Untuk mengakses Aplikasi ini sebagai reseller gunakan akun berikut:<br>
+                    email: anto@gmail.com
+                    password: 7aysd7
 
                 </p>
             </br></br></br>
