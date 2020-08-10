@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
             'aktif' => 1,
         ]);
-        */
+        
         DB::table('users')->insert([
             'nama_u' => 'anto',
             'alamat_u' => 'kalimantan tengah',
@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'reseller',
             'aktif' => 1,
         ]);
-        
+        */
         factory(App\trans_reseller::class, 100)->create();
     }
 }
