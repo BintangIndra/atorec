@@ -20,11 +20,11 @@ class ownercontroller extends Controller
         if ($bulan == "agda7") {
             $bulan = date('m');
         }
-        $jumlah = trans_reseller::select('created_at', trans_reseller::raw('SUM(tr_qty) as total_sales'))
-        		->wheremonth('created_at', $bulan)
-        		->groupBy('created_at')
-        		->get();
-        //dd($bln);
+        $jumlah = trans_reseller::select(array(trans_reseller::raw('date(created_at) as waktu'),trans_reseller::raw('SUM(tr_qty) as total_sales')))
+                ->wheremonth('created_at', $bulan)
+                ->groupBy('waktu')
+                ->get();
+        //dd(intval(explode("-", $jumlah[0]->waktu)));
         return view('owner.transaksi',['jumlah' => $jumlah, 'bulan' => $bulan]);
     }
 

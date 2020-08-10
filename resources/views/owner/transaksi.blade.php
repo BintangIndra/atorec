@@ -86,7 +86,7 @@
                         var data = google.visualization.arrayToDataTable([
                           ['Tanggal', 'Transaksi'],
                           @foreach($jumlah as $s)
-                          [{{$s->created_at->format('d')}},  {{$s->total_sales}}],
+                          [{{intval(explode("-", $s->waktu)[2])}},  {{$s->total_sales}}],
                           @endforeach
                         ]);
 
