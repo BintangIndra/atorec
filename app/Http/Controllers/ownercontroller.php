@@ -31,4 +31,14 @@ class ownercontroller extends Controller
     public function export_excel(Request $request){
         return Excel::download(new transaksireselEX($request->bulan), 'transaksi.xlsx');
     }
+
+    public function aktivasi(Request $request){
+        $this->validate($request,[
+           'status_u' => 'required']);
+        $anggota = User::find($request->id_u);
+        $anggota->aktif = $request->status_u;
+        $anggota->save();
+        return redirect('owner/index');
+    }
+
 }

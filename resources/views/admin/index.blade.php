@@ -36,9 +36,9 @@
                         <td>{{$a->alamat_u}}</td>
                         <td>{{$a->email}}</td>
                         <td>{{$a->no_hp}}</td>
-                        <td><form action="{{ route('admin.aktivasi') }}" method="POST" name="aktivasi" id="aktivasi">
+                        <td><form action="{{ route('admin.aktivasi') }}" method="POST" name="aktivasi{{$a->id}}" id="aktivasi{{$a->id}}">
                             @csrf
-                            <select name="status_u" id="status_u">
+                            <select name="status_u" id="status_u" form="aktivasi{{$a->id}}">
                                 @if($a->aktif == 0)
                                     <option value="0">Tidak Aktif</option>
                                     <option value="1">Aktif</option>
@@ -47,8 +47,8 @@
                                     <option value="0">Tidak Aktif</option>                                
                                 @endif
                             </select>
-                            <input type="hidden" id="id_u" name="id_u" value={{$a->id}}>
-                            <td><button class="btn btn-danger" type="submit" value="submit" form="aktivasi">Ubah</button></td>
+                            <input type="hidden" id="id_u" name="id_u" value="{{$a->id}}" form="aktivasi{{$a->id}}">
+                            <td><button class="btn btn-danger" type="submit" value="submit" form="aktivasi{{$a->id}}">Ubah</button></td>
                         </form></td>
                         </tr>
                     @endforeach

@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -52,6 +52,8 @@ Route::post('admin.transaksi/kirim','admincontroller@trakirim')->name('transaksi
 
 
 
-Route::get('owner.index', 'ownercontroller@index')->middleware('can:isowner')->name('owner.index');
-Route::get('owner.transaksi/{bulan}', 'ownercontroller@transaksi')->middleware('can:isowner')->name('owner.transaksi');
-Route::get('owner.export', 'ownercontroller@export_excel')->middleware('can:isowner')->name('owner.export');
+Route::get('owner/index', 'ownercontroller@index')->middleware('can:isowner')->name('owner.index');
+Route::get('owner/transaksi/{bulan}', 'ownercontroller@transaksi')->middleware('can:isowner')->name('owner.transaksi');
+Route::get('owner/export', 'ownercontroller@export_excel')->middleware('can:isowner')->name('owner.export');
+Route::post('/owner/aktivasi', 'ownercontroller@aktivasi')
+->name('owner.aktivasi')->middleware('can:isowner');
