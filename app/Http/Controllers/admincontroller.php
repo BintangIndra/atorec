@@ -81,7 +81,7 @@ class admincontroller extends Controller
     }
 
     public function traindex(){
-        $transaksi = trans_reseller::all();
+        $transaksi = trans_reseller::paginate(10);
         return view('admin.transaksi',['transaksi' => $transaksi]);
     }
 

@@ -1,3 +1,6 @@
+kesalahan dalam query yang terbagi akibat paginate
+            kurang efisien
+<!-- Modal shop cart-->
 <div class="modal fade" id="cart">
     <div clasS="modal-dialog">
     <!-- Modal content-->

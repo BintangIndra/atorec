@@ -18,7 +18,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                    <DIV CLASS="table-responsive">
                     <table class="table">
                     <thead>
                       <tr>
@@ -54,6 +54,7 @@
                     @endforeach
                     </tbody>
                   </table>
+                  </DIV>
                 </div>
             </div>
         </div>

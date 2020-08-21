@@ -18,8 +18,12 @@ class resellercontroller extends Controller
 			$pesanan[$i]->produk;
 			$i++;
 		}
-		//dd($pesanan[0]->produk->nama_p);
-    	return view('/reseller',['produk' => $produk ,'pesanan' => $pesanan]);
+
+		$ses = session()->get('$cart');
+		if($ses){
+			$shopcart = produk::wherein('id',array_keys($ses))->get();
+		}
+    	return view('/reseller',['produk' => $produk ,'pesanan' => $pesanan,'shopcart' => $shopcart]);
     }
 
     public function rsearch(Request $request){
@@ -32,8 +36,11 @@ class resellercontroller extends Controller
 			$pesanan[$i]->produk;
 			$i++;
 		}
-		//dd($pesanan[0]->produk->nama_p);
-    	return view('/reseller',['produk' => $produk ,'pesanan' => $pesanan]);
+		$ses = session()->get('$cart');
+		if($ses){
+			$shopcart = produk::wherein('id',array_keys($ses))->get();
+		}
+    	return view('/reseller',['produk' => $produk ,'pesanan' => $pesanan,'shopcart' => $shopcart]);
     }
 
     /* 
@@ -45,6 +52,7 @@ class resellercontroller extends Controller
     	$this->validate($request,['qty' => 'required|numeric|min:1|max:'.$produk->qty_p]);
     	$OP=[$request->OP => [$request->qty]];
 		$AP=session()->get('$cart');
+
 		//mendapatkan barang yg akan ditambahkan dan mendapatkan isi shop cart
 		if($AP==Null){
 			session()->put('$cart',$OP);
@@ -55,7 +63,7 @@ class resellercontroller extends Controller
 		elseif(isset($AP[$request->OP])){
 			$AP[$request->OP][0] = $request->qty;
 			session()->put('$cart',$AP);
-			//$OP=session()->get('cart');	
+			//$OP=session()->get('cart');
 			return redirect('/reseller');
 			//mengecek apakah barang sudah ada di shop cart
 			//jika ada menambah jumlah barang sesuai dengan barang yang ditambahkan
@@ -68,6 +76,7 @@ class resellercontroller extends Controller
 			//mengecek apakah barang tidak ada pada shopcart
 			//jika tidak ada menambah barang baru
 		}
+		dd('4');
     }
 
     public function hapuspro($hapus){
