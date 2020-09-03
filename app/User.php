@@ -38,6 +38,6 @@ class User extends Authenticatable
     ];
 
     function trans_reseller(){
-        return $this->hasMany('App\trans_reseller');
+        return $this->hasMany(trans_reseller::class);
     }
 }

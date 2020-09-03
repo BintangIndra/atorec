@@ -172,6 +172,7 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>                        
     </div>
     <div class="modal-body">
+        @if($shopcart)
         @foreach($shopcart as $pro)
             <div><img src="{{$pro->img_url}}" width="75px" height="75px"></br>
                 {{$pro->nama_p}}</br>
@@ -181,6 +182,7 @@
                 <a href="{{route('reseller.hapus',['hapus' => $pro->id]) }}"><button type="button" class="btn btn-primary"> Hapus </button></a>
             <div>
         @endforeach
+        @endif
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>   

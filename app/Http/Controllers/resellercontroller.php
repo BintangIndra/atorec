@@ -22,7 +22,10 @@ class resellercontroller extends Controller
 		$ses = session()->get('$cart');
 		if($ses){
 			$shopcart = produk::wherein('id',array_keys($ses))->get();
+		}else{
+			$shopcart = null;
 		}
+
     	return view('/reseller',['produk' => $produk ,'pesanan' => $pesanan,'shopcart' => $shopcart]);
     }
 
